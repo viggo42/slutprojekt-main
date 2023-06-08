@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+
+html {
+    font-size: 15px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "top top top top top"
+        ". header   header header    ."
+        "leftsid     leftsid    main   rigtsid     rigtsid     "
+        "info      info   info info    info     "
+        "copy      copy   copy copy    copy";
+    grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
+    background-image: url(imged/bg3.jpg);
+}
+
+header {
+    grid-area: header;
+    background-color: burlywood;
+}
+
+.pading {
+    padding: 1rem;
+}
+
+.bild img {
+    width: 100rem;
+}
+
+
+
+.logo {
+    font-family: 'Rubik Wet Paint', cursive;
+    padding: 1rem;
+}
+
+.meny a {
+    font-family: 'Abril Fatface', cursive;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.meny {
+    border-top: 2px;
+    border-top-style: solid;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    grid-area: main;
+    background-color: burlywood;
+    border: 2px sandybrown;
+    padding: 4px;
+}
+
+.box {
+    background-color: oldlace;
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
+
+.bakgrond1 {
+    grid-area:leftsid ;
+    grid-area: rigtsid;
+    /* background-image: url(imged/bg3.jpg);*/
+}
+
+
+.gull {
+    color: darkgoldenrod;
+}
+
+.search {
+    flex-basis: 90%;
+    padding: 6%;
+}
+
+.topbar {
+    grid-area: top;
+    height: 2rem;
+    background-color: bisque;
+}
+
+.border {
+    border-left: 1rem;
+    border-left-style: solid;
+    padding-left: 1rem;
+    border-color: darkgoldenrod;
+}
+
+.flex-h {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    align-items:flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.flex50 {
+    width: 15rem;
+    height: auto;
+    margin-top: 0%;
+}
+
+
+.title{
+ font-size: larger;   
+}
+
+.fleximg {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+footer {
+    grid-area: info;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin-right: 3rem;
+}
+
+.copy {
+    grid-area: copy;
+    background-color: grey;
+}
